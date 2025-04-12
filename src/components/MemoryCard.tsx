@@ -26,7 +26,7 @@ type MemoryCardProps = {
       <img
         onClick={() => handleIfClicked(clickedImg, setClickedImg, id, imgArr, setImgArr, setBestScore, setScore, score, bestScore)}
         src={image}
-        className="w-48 object-cover aspect-[2/3] shadow-md rounded-xl
+        className="w-48 min-[1921px]:w-48 object-cover aspect-[2/3] shadow-md rounded-xl
           border-transparent transform delay-100 duration-300 ease-in-out hover:scale-105 hover:border-sky-300 hover:border-10"
       />
     );

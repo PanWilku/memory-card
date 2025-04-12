@@ -22,7 +22,7 @@ function Gameboard({imgArr, clickedImg, setClickedImg, setImgArr, setBestScore, 
     if (!imgArr) return null;
     return(
         <div className="flex w-full h-full bg-amber-100 justify-center">
-            <div className="grid grid-cols-4 gap-4 w-9/10 lg:w-2/5 h-full items-center">
+            <div className="grid min-[1921px]:grid-cols-5 grid-cols-10 gap-4 w-9/10 h-1/2 items-center pt-2">
             {imgArr.map((item) => (
                 <MemoryCard setImgArr={setImgArr} setClickedImg={setClickedImg} imgArr={imgArr} image={item.url}
                  id={item.id} key={item.id} clickedImg={clickedImg}
